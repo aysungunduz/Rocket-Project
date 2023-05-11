@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.space {
+    background-image: url(image/background.jpg);
+    position: relative;
+    height: 100vh;
+}
+
+div .rocket {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    transition: 3s ease-in;
+}
+
+div .rocket>div {
+    width: 95px;
+    height: 215px;
+    border: none;
+    background-image: url(image/rocket.gif);
+    transition: 2s ease-in-out;
+}
+
+.space:hover>div.rocket {
+    transform: translate(550px, -600px);
+}
+
+.space:hover>div.rocket>div {
+    transform: rotate(70deg);
+}
